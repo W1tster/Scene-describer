@@ -1,0 +1,8 @@
+opencv-python-headless
+numpy<2.0
+pillow
+tflite-runtime; platform_machine == 'armv7l' or platform_machine == 'aarch64'
+tensorflow; platform_machine != 'armv7l' and platform_machine != 'aarch64'
+# picamera2 is pre-installed on Raspberry Pi OS (Bookworm). Do NOT pip install it.
+# If you're on a fresh minimal image, install it via:
+#   sudo apt install -y python3-picamera2
